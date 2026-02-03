@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+html, body {
+    height: 100%; 
+    overflow-x: hidden; 
+    
+}
+body{
+    background-color: #000000;
+
+}
+
+
+
+/* Rigth side*/
+.greeting {
+    background: rgb(16, 16, 16);
+    height: 15vh; 
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo_inst{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+.log_in {
+    background-color: #0f1c24;
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+#none2{
+    display: none;
+}
+@media(min-width: 1100px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    .greeting {
+        width: 55%;
+        height: 85vh;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .log_in {
+        width: 45%;
+        height: 85vh;
+    }
+
+    .foot {
+        width: 100%;
+        height: 15vh; 
+    }
+    #none{
+        display:none;
+    }
+    #line{
+        width: 2px;
+        background-color: #273441;
+        height: 85vh;
+    }
+    #photo{
+        display: flex;
+        width: 70%;
+        height: 70%;
+        flex-direction: column;
+        justify-content: center;
+        align-self: end;
+        object-fit: contain;
+        text-align: center;
+    }
+    
+    .greeting h1{
+        color: aliceblue;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    #photo span{
+        background: linear-gradient(45deg, #ff7a18, #ff2bdc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+   
+}
+@media(max-width:1100px){
+    #photo{
+        display: none;
+    }
+}
+
+
+
+
+
+
+.log_in .log_in_field p{
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    
+}
+
+.log_in .log_in_field{
+    
+    color: aliceblue;
+   
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.log_in .log_in_field input{
+    width: 93%;
+    border-radius: 17px;
+    border:none;
+    padding: 20px;
+    font-size: 15px;
+    border: 1px solid #273441;
+    color: #273441;
+    margin-top: 15px;
+    background: #0f1c24;
+    min-height: 25px;
+}
+
+
+.log_in .log_in_field input:hover{
+    border-color: aliceblue;
+}
+
+/* Buttons */
+.log_in .log_in_field button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #2d4e9d;
+    border:none;
+    color: #7a7a7a;
+    font-size: 16px;
+    cursor: not-allowed;
+    min-height: 48px;
+}
+#forg_pass{
+    background-color: #0f1c24;
+    cursor: pointer;
+    border: 1px solid #0f1c24;
+    color: white;
+
+}
+#forg_pass:hover{
+    background-color: #1d2f3a;
+    border: 1px solid #273441;
+}
+#log_w_face{
+    background-color: #0f1c24;
+    border: 1px solid #273441;
+    cursor: pointer;
+    color:white;
+}
+#log_w_face:hover{
+    background-color: #1d2f3a;
+}
+#crt_acc{
+    background-color: #0f1c24;
+    border: 1px solid #4270dd;
+    color:#4270dd;
+    cursor: pointer;
+}
+#crt_acc:hover{
+    background-color: #1d2f3a;
+
+}
+#meta_icon{
+    width: 100px;
+    height: 100px;
+}
+.facebook{
+    width: 14px;
+    height: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#meta_icon{
+    width: 60px;
+    height: 60px;
+    
+}
+
+
+
+
+/* LINES */
+
+hr{
+    border: 1px solid #273441;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* FOOt */
+.foot {
+    background: rgb(16, 16, 16);
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.foot p{
+    margin-top: 5px;
+    font-size: 12px;
+    
+    
+}
+
+.foot a{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    padding: 7px;
+    /* background-color: azure; */
+    
+}
+.foot a:hover{
+    text-decoration: underline;
+    
+    
+}
+.foot #texts{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+
